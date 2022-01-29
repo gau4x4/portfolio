@@ -47,11 +47,12 @@
     href="https://www.linkedin.com/in/gaurav-p-a71155a9/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BIvoM56aHScyxYOk%2B%2B%2BYhfQ%3D%3D"
     rel="apple-touch-icon" />
   <style>
-    .w-webflow-badge{
-      display: none!important;
+    .w-webflow-badge {
+      display: none !important;
     }
+
     .work-image.cc-work-1 {
-      background: url(https://www.tcs.com/content/dam/tcs/images/discover-tcs/brand/png/tcs-color.png) no-repeat center /contain;
+      background: url(https://www.tcs.com/content/dam/tcs/images/discover-tcs/brand/png/tcs-color.png) no-repeat center /cover;
     }
 
     .work-image.cc-work-2 {
@@ -66,26 +67,36 @@
       background: url(https://d28htnjz2elwuj.cloudfront.net/wp-content/uploads/2021/10/30094158/University-of-Florida-CREDIT-Katherine-Welles-Shutterstock-600x400.jpg) no-repeat center /contain;
     }
 
-    .work-position-wrap>.w-image-wup{
-      width:25%;
-      height:150px;
+    .wup-image-grid {
+      height: 300px;
+      margin: 0;
+    }
+
+    .work-position-wrap>.w-image-wup {
+      min-width: 250px;
+      min-height: 250px;
       transition: all ease-in-out .2s;
-     } 
-     .work-position-wrap>.w-image-wup:hover{
-       opacity: 0.8;
-     }
-     .w-image-wup.w-dp-1{
+    }
+
+    .work-position-wrap>.w-image-wup:hover {
+      opacity: 0.8;
+    }
+
+    .w-image-wup.w-dp-1 {
       background: url(https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/e35/59407019_411806746074408_7458363363690719274_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=100&_nc_ohc=Iixvmo0344oAX_n8V7Y&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjA0ODE3OTcyMjY4MjYwMTcyMQ%3D%3D.2-ccb7-4&oh=00_AT9RAA6r8fwezu22yDEg_D5Sw2UzXbDRo1nxribXINWphQ&oe=61FB8E25&_nc_sid=30a2ef) no-repeat center /contain;
-     }
-     .w-image-wup.w-dp-2{
+    }
+
+    .w-image-wup.w-dp-2 {
       background: url(https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/78947802_823587318087528_7531434131066283788_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=100&_nc_ohc=T7DFnkhvRc0AX9dkLPj&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjIwOTAwODE0MDk4MTQzMDQyMw%3D%3D.2-ccb7-4&oh=00_AT8B_ImagSSAi9MNgjT4v-Rg7PGsB-cVQe7LjeHNs7KWkA&oe=61FB8098&_nc_sid=30a2ef) no-repeat center /contain;
-     }
-     .w-image-wup.w-dp-3{
+    }
+
+    .w-image-wup.w-dp-3 {
       background: url(https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/e35/p480x480/81589378_813120345782446_1735158927869481501_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=110&_nc_ohc=322Mf0ImruIAX8NA_QD&tn=D_xGxWl07iN4m8o7&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjIyNzY5MzQyMjU4NDkzNjQzMA%3D%3D.2-ccb7-4&oh=00_AT-7nXnp26zhyMg_Ce3KOb3jDYMLjakJM1ySgr1AoTrWww&oe=61FB2BD3&_nc_sid=30a2ef) no-repeat center /contain;
-     }
-     .w-image-wup.w-dp-4{
+    }
+
+    .w-image-wup.w-dp-4 {
       background: url(https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/e35/209053781_181200060624192_4804965280190258749_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=100&_nc_ohc=DA0rMig1p7AAX-1aVub&tn=D_xGxWl07iN4m8o7&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjYwNTk5Mjk2NTMyOTg5NjkxMQ%3D%3D.2-ccb7-4&oh=00_AT-6ZOP1WlzN2t1qfTOBQiTYlL-KPT6cfkxoapfeaRGmeQ&oe=61FB5C70&_nc_sid=30a2ef) no-repeat center /contain;
-     }
+    }
   </style>
 </head>
 
@@ -119,7 +130,7 @@
           in Gainesville, FL.
         </h1>
       </div>
-      <div class="w-layout-grid work-experience-grid">
+      <div class="w-layout-grid work-experience-grid wup-image-grid">
         <div class="work-position-wrap">
           <div class="w-image-wup w-dp-1"></div>
           <div class="w-image-wup w-dp-2"></div>
