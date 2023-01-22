@@ -703,6 +703,7 @@ table th {
   color: #141c3a;
   display: block;
   padding: 1.25rem;
+  min-height: 265px;
 }
 
 a.box:hover,
@@ -2356,7 +2357,7 @@ fieldset[disabled] .button {
 
 .container {
   flex-grow: 1;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   position: relative;
   width: auto;
 }
@@ -13095,6 +13096,7 @@ hr {
 .avatar {
   margin: 2rem 0;
   width: 150px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 769px) {
