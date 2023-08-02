@@ -4817,14 +4817,12 @@
   <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <svg class="svg-inline--fa fa-mf-logo has-text-primary fa-4x" aria-hidden="true"
-            focusable="false" data-prefix="fak" data-icon="mf-logo" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 640 512" data-fa-i2svg="" style="width: 1.25em">
-            <!-- <path fill="currentColor"
-              d="M458.566 321.7c-19.552 0-37.558-10.598-46.947-27.745l-28.553-52.116-24.007 44.217c-12.003 23.505-45.69 26.588-57.886 3.179l-25.168-48.263-37.945 69.938-45.495.289 54.4-102.691c11.52-21.771 42.592-22.157 54.789-.77l27.104 47.78 26.33-47.684c11.807-21.386 42.783-21.483 54.591-.097l36.883 66.277c6.679 12.042 24.973 7.322 24.973-6.358l.096-88.144c0-32.753-26.813-59.437-59.725-59.437h-183.82c-32.911 0-59.724 26.684-59.724 59.437v152.782c0 32.756 26.813 59.44 59.725 59.44h246.642V432H228.187C172.915 432 128 387.302 128 332.294v-152.59C128 124.602 172.818 80 228.187 80h183.627C467.181 80 512 124.602 512 179.704v88.82c0 29.38-23.91 53.175-53.434 53.175z">
-            </path fill="currentColor"> -->
-            <path fill="currentColor" xmlns="http://www.w3.org/2000/svg" d="M448 256c0 143.4-118.6 222.3-225 222.3c-132.3 0-222.1-106.2-222.1-222.4c0-124.4 100.9-223.9 223.1-223.9c84.84 0 167.8 55.28 167.8 88.2c0 18.28-14.95 32-32 32c-31.04 0-46.79-56.16-135.8-56.16c-87.66 0-159.1 70.66-159.1 159.8c0 34.81 27.19 158.8 159.1 158.8c79.45 0 144.6-55.1 158.1-126.7h-134.1c-17.67 0-32-14.33-32-32s14.33-31.1 32-31.1H416C433.7 224 448 238.3 448 256z"/>
+        <a class="navbar-item">
+          <svg class="svg-inline--fa fa-mf-logo has-text-primary fa-4x" aria-hidden="true" focusable="false"
+            data-prefix="fak" data-icon="mf-logo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+            data-fa-i2svg="" style="width: 1.25em">
+            <path fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              d="M448 256c0 143.4-118.6 222.3-225 222.3c-132.3 0-222.1-106.2-222.1-222.4c0-124.4 100.9-223.9 223.1-223.9c84.84 0 167.8 55.28 167.8 88.2c0 18.28-14.95 32-32 32c-31.04 0-46.79-56.16-135.8-56.16c-87.66 0-159.1 70.66-159.1 159.8c0 34.81 27.19 158.8 159.1 158.8c79.45 0 144.6-55.1 158.1-126.7h-134.1c-17.67 0-32-14.33-32-32s14.33-31.1 32-31.1H416C433.7 224 448 238.3 448 256z" />
           </svg></a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false"
           data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span
             aria-hidden="true"></span></a>
@@ -4832,16 +4830,19 @@
       <div class="navbar-menu is-shadowless" id="navMenu">
         <div class="navbar-start"></div>
         <div class="navbar-end">
-          <a class="navbar-item has-text-weight-normal" href="#">Home</a>
-         <a class="navbar-item has-text-weight-normal" href="https://drive.google.com/file/d/1fn_kX28vdct1oqDltscNuUrdBiCJS47w/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+          <a class="navbar-item has-text-weight-normal">Home</a>
+          <a class="navbar-item has-text-weight-normal"
+            href="https://drive.google.com/file/d/1fn_kX28vdct1oqDltscNuUrdBiCJS47w/view?usp=sharing" target="_blank"
+            rel="noopener">Resume</a>
           <div class="navbar-item">
-            <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="#">Say Hello
+            <a class="button is-primary is-outlined is-rounded has-text-weight-normal" id="say_hello">Say Hello
             </a>
           </div>
         </div>
       </div>
     </div>
   </nav>
+
   <section class="hero is-white has-text-centered">
     <div class="hero-body">
       <div class="container">
@@ -4849,11 +4850,11 @@
           <div class="column">
             <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
               Gaurav Pathak
-           </h1>
-            <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
-              Designer, Full-Stack Developer &amp; Learner          
             </h1>
-        
+            <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+              Designer, Full-Stack Developer &amp; Learner
+            </h1>
+
             <h2 class="subtitle is-size-4-tablet">
               I'm a final Semester CS Grad Student at University of Florida.
             </h2>
@@ -4874,7 +4875,7 @@
       </div>
     </div>
   </section>
-  <section class="section is-medium is-primary has-text-centered is-long">
+  <section class="section is-medium is-primary has-text-centered">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-three-fifths">
@@ -4884,10 +4885,31 @@
           <h2 class="subtitle is-size-5-desktop has-text-weight-normal">
             Since beginning my journey as a Information Technology student over 12 years
             ago, I've done strengthen my work in this field, worked for startups,
-            and well established organizations like TATA Consultancy Services, and collaborated with talented people to create digital products
+            and well established organizations like TATA Consultancy Services, and collaborated with talented people to
+            create digital products
             for both business and consumer use. I'm quietly confident,
             naturally curious, and perpetually working on improving my chops
             one design problem at a time.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section is-medium is-primary has-text-centered">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">
+            Skills and Languages I Speak!
+          </h1>
+          <h2 class="subtitle is-size-5-desktop has-text-weight-normal">
+            Programming Languages &amp; Frameworks: Java, C, C++, Python, JavaScript, TypeScript, jQuery, HTML, CSS3,
+            LESS,
+            SASS, Bootstrap, SQL, Angular, React, NodeJS, D3.JS, FusionCharts, GraphQL, Relay, Docker, Parcel.
+            Technologies: UX Design, CI/CD, AWS, User-Centered Design, Agile Methodology, SDLC, Cross Browser Testing,
+            Responsive Web Development, Single Page Applications, RDBMS, System Design, Design Reviews, Product
+            Strategy, Debugging, Microservices, Progressive Web Applications, Restful APIs, Prototyping.
+            Tools: Adobe Photoshop, Gimp, Figma, Invision, SVN, Git, Github, Jira, Lighthouse, Cypress, Bugzilla, Cloud.
           </h2>
         </div>
       </div>
@@ -5017,7 +5039,55 @@
   <section class="section projects is-medium is-white has-text-centered">
     <div class="container is-narrow">
       <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">
-        My Recent Work
+        Education
+      </h1>
+      <div class="project-grid">
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+              <img class="project-thumb" src="./files/coupal.png" />
+              <figcaption>
+                <h1 class="title is-size-5 is-size-4-widescreen">
+                  Dr. A.P.J. Abdul Kalam Technical University
+                </h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://aktu.ac.in/"
+                  target="_blank"><span>Visit Website</span><span class="icon"><svg
+                      class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas"
+                      data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                      </path>
+                    </svg><!-- <i class="fas fa-angle-right"></i> --></span></a>
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+              <img class="project-thumb" src="./files/wedlerengineering.png" />
+              <figcaption>
+                <h1 class="title is-size-5 is-size-4-widescreen">
+                  One of America’s all-around best universities, the University of Florida
+                </h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://www.ufl.edu/"
+                  target="_blank"><span>View
+                    Website</span><span class="icon"><svg class="svg-inline--fa fa-angle-right" aria-hidden="true"
+                      focusable="false" data-prefix="fas" data-icon="angle-right" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                      </path>
+                    </svg><!-- <i class="fas fa-angle-right"></i> --></span></a>
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">
+        My Recent Involvements
       </h1>
       <h2 class="subtitle is-size-5-desktop">
         Here are a few past design projects I've worked on. Want to see more?
@@ -5092,129 +5162,25 @@
                 <h1 class="title is-size-5 is-size-4-widescreen">
                   Making Booking tables and Food Ordering Easy with Tech.
                 </h1>
-                <a class="button is-primary is-outlined is-rounded" href="#"
-                  target="_blank"><span>Visit Website</span><span class="icon"><svg
-                      class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
-                      </path>
-                    </svg><!-- <i class="fas fa-angle-right"></i> --></span></a>
-              </figcaption>
-              <div class="overlay"></div>
-            </figure>
-          </div>
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-              <img class="project-thumb" src="./files/coupal.png" />
-              <figcaption>
-                <h1 class="title is-size-5 is-size-4-widescreen">
-                  Dr. A.P.J. Abdul Kalam Technical University
-                </h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://aktu.ac.in/"
-                  target="_blank"><span>Visit Website</span><span class="icon"><svg
-                      class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
-                      </path>
-                    </svg><!-- <i class="fas fa-angle-right"></i> --></span></a>
-              </figcaption>
-              <div class="overlay"></div>
-            </figure>
-          </div>
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-              <img class="project-thumb" src="./files/wedlerengineering.png" />
-              <figcaption>
-                <h1 class="title is-size-5 is-size-4-widescreen">
-                  One of America’s all-around best universities, the University of Florida
-                </h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://www.ufl.edu/" target="_blank"><span>View
+                <a class="button is-primary is-outlined is-rounded" id="briskbite_inc"><span>Visit
                     Website</span><span class="icon"><svg class="svg-inline--fa fa-angle-right" aria-hidden="true"
                       focusable="false" data-prefix="fas" data-icon="angle-right" role="img"
                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
                       <path fill="currentColor"
                         d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
                       </path>
-                    </svg><!-- <i class="fas fa-angle-right"></i> --></span></a>
+                    </svg></a>
               </figcaption>
               <div class="overlay"></div>
             </figure>
           </div>
+
         </div>
       </div>
-      <div class="columns is-centered">
-        <div class="column">
-          <a class="button is-primary is-outlined is-rounded is-medium has-text-weight-normal"
-            href="#"><span class="icon"><svg class="svg-inline--fa fa-dribbble"
-                aria-hidden="true" focusable="false" data-prefix="fab" data-icon="dribbble" role="img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                <path fill="currentColor"
-                  d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z">
-                </path>
-              </svg><!-- <i class="fab fa-dribbble"></i> --></span><span>See more on Dribbble</span></a>
-        </div>
-      </div>
+
     </div>
   </section>
-  <section class="section clients is-medium is-white has-text-centered has-border-top">
-    <div class="container is-narrow">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <h1 class="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">
-            I'm proud to have collaborated with some awesome companies:
-          </h1>
-        </div>
-      </div>
-      <!-- <div class="client-grid">
-        <div class="columns is-multiline is-mobile">
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/briteweb.svg" />
-            </figure>
-          </div>
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/goodkind.svg" />
-            </figure>
-          </div>
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/redstamp.svg" />
-            </figure>
-          </div>
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/domain7.svg" />
-            </figure>
-          </div>
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/designlab.png" />
-            </figure>
-          </div>
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/chronicled.svg" />
-            </figure>
-          </div>
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/bldrs.png" />
-            </figure>
-          </div>
-          <div class="column is-half-mobile is-one-quarter-tablet">
-            <figure class="image is-2x1">
-              <img class="client-logo" src="./files/serpmetrics.svg" />
-            </figure>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </section>
+
   <section class="section is-medium is-primary has-text-centered is-long-ish">
     <div class="container">
       <div class="columns is-centered">
@@ -5243,7 +5209,7 @@
               <p>
                 A powerful, easy-to-use Home Cooked Food Delivery App
               </p>
-              <a class="link" href="#" target="_blank"><span
+              <a class="link" href="https://github.com/gau4x4/" target="_blank"><span
                   class="tag is-link is-light is-medium"><svg class="svg-inline--fa fa-arrow-up-right-from-square mr-2"
                     aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-up-right-from-square"
                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -5259,7 +5225,7 @@
               <p>
                 SIS(Student Information System)
               </p>
-              <a class="link" href="#" target="_blank"><span
+              <a class="link" href="https://github.com/gau4x4/" target="_blank"><span
                   class="tag is-link is-light is-medium"><svg class="svg-inline--fa fa-arrow-up-right-from-square mr-2"
                     aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-up-right-from-square"
                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
@@ -5276,29 +5242,31 @@
                 OSW(Ore Software Workstation)
                 Freelancing Web-Application
               </p>
-              <span class="tag is-light is-medium"><svg class="svg-inline--fa fa-code-branch mr-2" aria-hidden="true"
-                  focusable="false" data-prefix="fal" data-icon="code-branch" role="img"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+              <a class="tag is-light is-medium" href="https://github.com/gau4x4/" target="_blank"><svg
+                  class="svg-inline--fa fa-code-branch mr-2" aria-hidden="true" focusable="false" data-prefix="fal"
+                  data-icon="code-branch" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                  data-fa-i2svg="">
                   <path fill="currentColor"
                     d="M160 80C160 118.7 132.5 150.1 96 158.4V273.6C116.3 252.9 144.7 240 176 240H272C316.2 240 352 204.2 352 160V158.4C315.5 150.1 288 118.7 288 80C288 35.82 323.8 0 368 0C412.2 0 448 35.82 448 80C448 118.7 420.5 150.1 384 158.4V160C384 221.9 333.9 272 272 272H176C131.8 272 96 307.8 96 352V353.6C132.5 361 160 393.3 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 393.3 27.48 361 64 353.6V158.4C27.48 150.1 0 118.7 0 80C0 35.82 35.82 0 80 0C124.2 0 160 35.82 160 80V80zM80 128C106.5 128 128 106.5 128 80C128 53.49 106.5 32 80 32C53.49 32 32 53.49 32 80C32 106.5 53.49 128 80 128zM368 128C394.5 128 416 106.5 416 80C416 53.49 394.5 32 368 32C341.5 32 320 53.49 320 80C320 106.5 341.5 128 368 128zM80 480C106.5 480 128 458.5 128 432C128 405.5 106.5 384 80 384C53.49 384 32 405.5 32 432C32 458.5 53.49 480 80 480z">
                   </path>
-                </svg><!-- <i class="fal fa-code-branch mr-2"></i> -->OSW</span>
+                </svg><!-- <i class="fal fa-code-branch mr-2"></i> -->OSW</a>
             </div>
           </div>
           <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
             <div class="box">
               <!-- <img class="logo mb-5" src="" /> -->
               <p>
-                
-              Human Identification Based on Finger Geometry
+
+                Human Identification Based on Finger Geometry
               </p>
-              <span class="tag is-light is-medium"><svg class="svg-inline--fa fa-code-branch mr-2" aria-hidden="true"
-                  focusable="false" data-prefix="fal" data-icon="code-branch" role="img"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+              <a href="https://github.com/gau4x4/" target="_blank" class="tag is-light is-medium"><svg
+                  class="svg-inline--fa fa-code-branch mr-2" aria-hidden="true" focusable="false" data-prefix="fal"
+                  data-icon="code-branch" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                  data-fa-i2svg="">
                   <path fill="currentColor"
                     d="M160 80C160 118.7 132.5 150.1 96 158.4V273.6C116.3 252.9 144.7 240 176 240H272C316.2 240 352 204.2 352 160V158.4C315.5 150.1 288 118.7 288 80C288 35.82 323.8 0 368 0C412.2 0 448 35.82 448 80C448 118.7 420.5 150.1 384 158.4V160C384 221.9 333.9 272 272 272H176C131.8 272 96 307.8 96 352V353.6C132.5 361 160 393.3 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 393.3 27.48 361 64 353.6V158.4C27.48 150.1 0 118.7 0 80C0 35.82 35.82 0 80 0C124.2 0 160 35.82 160 80V80zM80 128C106.5 128 128 106.5 128 80C128 53.49 106.5 32 80 32C53.49 32 32 53.49 32 80C32 106.5 53.49 128 80 128zM368 128C394.5 128 416 106.5 416 80C416 53.49 394.5 32 368 32C341.5 32 320 53.49 320 80C320 106.5 341.5 128 368 128zM80 480C106.5 480 128 458.5 128 432C128 405.5 106.5 384 80 384C53.49 384 32 405.5 32 432C32 458.5 53.49 480 80 480z">
                   </path>
-                </svg><!-- <i class="fal fa-code-branch mr-2"></i> -->HIF</span>
+                </svg><!-- <i class="fal fa-code-branch mr-2"></i> -->HIF</a>
             </div>
           </div>
           <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
@@ -5307,30 +5275,32 @@
               <p>
                 IN-Help(An Application to help Internation students studying abroad)
               </p>
-              <span class="tag is-light is-medium"><svg class="svg-inline--fa fa-tools mr-2" aria-hidden="true"
-                  focusable="false" data-prefix="fal" data-icon="tools" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512" data-fa-i2svg="">
+              <a href="https://github.com/gau4x4/" target="_blank" class="tag is-light is-medium"><svg
+                  class="svg-inline--fa fa-tools mr-2" aria-hidden="true" focusable="false" data-prefix="fal"
+                  data-icon="tools" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                  data-fa-i2svg="">
                   <path fill="currentColor"
                     d="M225.1 378.1c-5.346-9.277-17.67-11.48-25.24-3.91l-91.57 91.55c-15.01 15-38.9 18.79-56.54 6.984c-23.71-15.88-26.04-48.76-6.967-67.97l134.8-134.8c6.242-6.238 6.229-16.36-.0313-22.59C173.3 241.2 163.2 241.2 156.1 247.4l-134.7 134.7c-29.62 29.62-29.62 77.86 0 107.5c16.64 16.78 39.93 24.7 63.89 21.57c17.43-2.273 33.27-11.36 45.7-23.79l90.54-90.52c4.883-4.883 6.32-12.52 2.857-18.49C225.2 378.3 225.1 378.2 225.1 378.1zM259.8 88.66c4.697-7.82 10.35-15.14 16.98-21.8c22.75-22.62 52.62-34.87 83.87-34.87c6.875 0 13.75 .625 20.62 1.75l-69.25 69.48l13.75 82.98l83.12 13.75l69.37-69.23c6.625 38.12-5.373 76.73-33.12 104.5c-4.432 4.434-9.207 8.426-14.23 12c-7.775 5.527-8.24 16.98-1.475 23.7c5.625 5.594 14.65 6.258 21.07 1.602c6.045-4.383 11.82-9.293 17.26-14.81c37.75-37.74 52.62-91.35 39.62-143.2c-2.25-9.492-9.625-16.99-19.12-19.62s-19.62 0-26.62 7l-63.87 63.86L353.5 158.3l-7.373-44.12l63.87-63.98c6.873-6.871 9.623-16.99 6.998-26.49c-2.623-9.496-10.25-16.74-19.75-19.12c-51.62-12.88-105.2 1.875-143.1 39.61c-8.27 8.348-15.16 17.61-20.98 27.39c-3.791 6.367-3.049 14.45 2.191 19.68C242.5 98.44 254.6 97.3 259.8 88.66zM63.1 431.9c0 8.746 7.25 15.1 16 15.1s15.1-7.25 15.1-15.1s-7.248-15.1-15.1-15.1S63.1 423.1 63.1 431.9zM502.6 389.4l-124.4-124.5c-15.62-15.62-36.12-23.37-56.62-23.37c-15.38 0-30.88 4.371-44.12 13.25L191.1 169.3l.002-73.35l-127.1-95.99L0 63.1l96 127.1l73.37-.0289l85.5 85.48c-20.62 31.12-17.12 73.23 10.25 100.7l124.5 124.5C395.7 508.8 403.1 512 412.2 512c8.123 0 16.37-3.125 22.5-9.375l67.1-67.98C515.1 422.1 515.1 401.9 502.6 389.4zM159.1 159.1h-47.1L42.25 66.98L66.1 42.24l92.1 69.73V159.1zM412.1 479.9l-124.4-124.5c-9.123-9.125-14.12-21.12-14.12-33.87c0-12.88 5-24.87 14.12-33.87c9-9.125 21-14.12 33.88-14.12c12.75 0 24.88 4.996 33.87 14.12l124.5 124.3L412.1 479.9z">
                   </path>
-                </svg><!-- <i class="fal fa-tools mr-2"></i> -->In-Help</span>
+                </svg><!-- <i class="fal fa-tools mr-2"></i> -->In-Help</a>
             </div>
           </div>
           <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
             <div class="box">
               <!-- <img class="logo mb-5" src="./files/houston.svg" /> -->
               <p>
-                
-              South American Property Listing Application
+
+                South American Property Listing Application
               </p>
-              <span class="tag is-light is-medium"><svg class="svg-inline--fa fa-lightbulb-on mr-2" aria-hidden="true"
-                  focusable="false" data-prefix="fal" data-icon="lightbulb-on" role="img"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+              <a href="https://github.com/gau4x4/" target="_blank" class="tag is-light is-medium"><svg
+                  class="svg-inline--fa fa-lightbulb-on mr-2" aria-hidden="true" focusable="false" data-prefix="fal"
+                  data-icon="lightbulb-on" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+                  data-fa-i2svg="">
                   <path fill="currentColor"
                     d="M119.1 33.74l-64-31.1c-7.875-3.1-17.5-.875-21.38 7.125c-4 7.875-.875 17.5 7.125 21.37l64 31.1C107.1 63.36 109.5 63.99 112 63.99c7.375 0 13.88-5.125 15.62-12.37C129.3 44.49 125.8 36.99 119.1 33.74zM112 287.1c-2.5 0-4.875 .625-7.125 1.75l-64 31.1c-8 3.875-11.12 13.5-7.25 21.37c4 7.1 13.62 11.12 21.5 7.25l64-31.1c6.625-3.375 10.12-10.87 8.5-17.1C125.9 293.1 119.4 287.1 112 287.1zM528 63.99c2.5 0 4.875-.625 7.125-1.75l64-31.1c8-3.875 11.12-13.5 7.125-21.37c-3.875-7.1-13.5-11.12-21.38-7.125l-64 31.1c-6.625 3.25-10.12 10.75-8.5 17.87C514.1 58.86 520.6 63.99 528 63.99zM96 175.1C96 167.1 88.88 159.1 80 159.1h-64c-8.875 0-16 7.125-16 15.1S7.125 191.1 16 191.1h64C88.88 191.1 96 184.9 96 175.1zM624 159.1h-64c-8.875 0-16 7.125-16 15.1s7.125 15.1 16 15.1h64c8.875 0 16-7.125 16-15.1S632.9 159.1 624 159.1zM599.1 321.7l-64-31.1c-7.875-3.1-17.5-.75-21.5 7.125c-3.875 7.875-.75 17.5 7.25 21.5l64 31.1c7.875 3.875 17.5 .75 21.5-7.25C610.3 335.2 607.1 325.6 599.1 321.7zM319.5 .0154C222.7 .2967 144 79.89 144 177.4c0 42.91 15.47 84.34 43.55 116.6c13.33 15.31 35.84 49.59 43.73 76.02c1.078 8.687 8.844 14.62 17.64 13.71c8.703-.9687 14.98-8.965 14.11-17.65l-.6094-3.312c-10.31-34.97-36-72.84-50.73-89.77C188.7 246.5 176 212.6 176 177.4c0-81.24 63.05-145.1 143.5-145.3H320c38.13 0 74.05 14.87 101.2 41.94C448.8 101.5 464 138.2 464 177.4c0 35.19-12.67 69.15-35.67 95.62c-14.75 16.94-40.44 54.8-50.75 89.77l-.625 3.344c-1.047 8.75 4.938 17.59 13.67 18.68c.7813 .0938 1.531 .1562 2.281 .1562c7.797 0 14.36-5.121 15.36-13.12c8.344-28.25 30.86-62.53 44.2-77.84C480.5 261.7 496 220.3 496 177.4c0-47.71-18.55-92.49-52.22-126.1C410.5 18.08 365.6-1.172 319.5 .0154zM383.1 415.1H256c-8.846 0-16.01 7.18-16 16.03l.0746 22.34c.0098 6.27 1.884 12.46 5.359 17.68l17.09 25.69c5.225 7.855 17.22 14.28 26.65 14.28h61.72c9.418 0 21.41-6.43 26.63-14.27l17.09-25.69c2.953-4.441 5.351-12.36 5.359-17.68l-.0254-22.34C399.1 423.2 392.8 415.1 383.1 415.1zM367.9 454.4l-16.11 24.45c-.4766 .4375-1.686 1.086-.8672 1.117l-60.29 .1172c-.4238-.1016-1.138-.2773-1.423-.2773c-.1406 0-.1348-.2266 0 0l-17.1-25.48l-.0098-6.367h95.94l.0039 5.18C367.9 453.6 367.7 454.4 367.9 454.4C367.9 454.4 367.8 454.5 367.9 454.4zM336 80.02c0-8.84-7.156-16-16-16c-61.75 0-112 50.24-112 111.1c0 8.844 7.156 16 16 16s16-7.159 16-16c0-44.1 35.88-79.1 80-79.1C328.8 96.01 336 88.86 336 80.02z">
                   </path>
                 </svg><!-- <i class="fal fa-lightbulb-on mr-2"></i> -->SAP
-                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -5346,65 +5316,13 @@
               opportunities.
             </h2>
             <a class="button is-primary is-outlined is-rounded is-medium has-text-weight-normal"
-              href="#"><span class="icon"><svg
-                  class="svg-inline--fa fa-message-lines" aria-hidden="true" focusable="false" data-prefix="far"
-                  data-icon="message-lines" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                  data-fa-i2svg="">
+              href="mailto:gauravp361@gmail.com"><span class="icon"><svg class="svg-inline--fa fa-message-lines"
+                  aria-hidden="true" focusable="false" data-prefix="far" data-icon="message-lines" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                   <path fill="currentColor"
                     d="M360 144h-208C138.8 144 128 154.8 128 168S138.8 192 152 192h208C373.3 192 384 181.3 384 168S373.3 144 360 144zM264 240h-112C138.8 240 128 250.8 128 264S138.8 288 152 288h112C277.3 288 288 277.3 288 264S277.3 240 264 240zM447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.1c0 9.836 11.02 15.55 19.12 9.7l124.9-93.7h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z">
                   </path>
                 </svg><!-- <i class="fa-regular fa-message-lines"></i> --></span><span>Start a conversation</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section testimonials is-medium is-white has-text-centered has-border-top">
-    <div class="container is-narrow">
-      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">
-        Testimonials
-      </h1>
-      <h2 class="subtitle is-size-5-desktop">
-        People I've worked with have said some nice things...
-      </h2>
-      <div class="columns is-centered">
-        <div class="column is-two-thirds">
-          <div class="testimonials-slider">
-            <input id="carousel-1" type="radio" name="carousel" checked="" />
-            <input id="carousel-2" type="radio" name="carousel" />
-            <input id="carousel-3" type="radio" name="carousel" />
-            <div class="carousel-slides">
-              <div class="carousel-inner">
-                <div class="carousel-item">
-                  <div class="testimonial-block">
-                    <img class="avatar" src="./files/pascal.png" />
-                    <p class="quote">
-                      “Lorem Ipsum”
-                    </p>
-                    <h1 class="title is-size-5">Pascal Tremblay</h1>
-                    <h2 class="subtitle is-size-6">
-                      Creative Lead, Good Kind
-                    </h2>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="testimonial-block">
-                    <img class="avatar" src="./files/alvin.png" />
-                    <p class="quote">
-                      “Lorem Ipsum”
-                    </p>
-                    <h1 class="title is-size-5">Alvin Engler</h1>
-                    <h2 class="subtitle is-size-6">
-                      CEO, West Third Enterprises, Inc.
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-nav">
-              <label for="carousel-1"></label>
-              <label for="carousel-2"></label>
-            </div>
           </div>
         </div>
       </div>
@@ -5424,13 +5342,13 @@
           </div>
           <div class="column level-item">
             <a class="button is-success is-outlined is-rounded is-medium has-text-weight-normal"
-              href="#"><span class="icon"><svg class="svg-inline--fa fa-hand-horns"
+              href="mailto:gauravp361@gmail.com"><span class="icon"><svg class="svg-inline--fa fa-hand-horns"
                   aria-hidden="true" focusable="false" data-prefix="far" data-icon="hand-horns" role="img"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                   <path fill="currentColor"
                     d="M376 64c-39.69 0-72 31.86-72 71.02v26.17C300.2 160.5 296.3 160 292.3 160C279.3 160 266.8 163.7 256 170.5C245.2 163.7 232.7 160 219.8 160C215.7 160 211.8 160.5 208 161.2V72c0-39.7-32.3-72-71.1-72C96.32 0 64.02 32.3 64.02 72v160.4l-7.113 1.188C23.94 240.7 0 270.3 0 303.1v80c0 22.38 10.12 43.09 27.81 56.84l45.97 35.75c29.34 22.83 65.97 35.41 103.2 35.41L271.8 512C368.9 512 448 432.9 448 335.8V135C448 95.86 415.7 64 376 64zM272 228.3C272 217.1 281.1 208 292.3 208s20.25 9.078 20.25 20.25v55.5C312.5 294.9 303.4 304 292.3 304S272 294.9 272 283.8V228.3zM240 228.3v55.5c0 .4414-.2246 .8105-.252 1.246C238.5 255.4 220.9 234.4 200.4 223.9C202.4 214.9 210.1 208 219.8 208C230.9 208 240 217.1 240 228.3zM112 72c0-13.23 10.78-24 23.1-24c13.22 0 24 10.77 24 24v123.9C156.4 202.6 153.8 209.8 152.6 217.6L112 224.4V72zM400 335.8C400 406.5 342.5 464 271.8 464l-94.81-.0156c-26.56 0-52.72-8.984-73.69-25.3l-45.97-35.75C51.47 398.4 48 391.3 48 383.1v-80c0-11.23 7.969-21.11 17.88-23.27l97-16.19c1.692-.3629 3.383-.5372 5.05-.5372c11.86 0 24.09 9.439 24.09 24.06c0 11.04-7.513 20.95-17.17 23.09L116.8 319c-12.03 1.633-20.78 11.92-20.78 23.75c0 20.24 18.82 24.08 23.69 24.08c1.161 0 2.339-.0863 3.526-.2646l59.88-8.172c7.666-1.646 14.58-4.74 21.01-8.496C209.1 351.1 214.3 352 219.8 352C232.7 352 245.2 348.3 256 341.5C266.8 348.3 279.3 352 292.3 352c37.63 0 68.25-30.61 68.25-68.25v-55.5c0-11.75-3.254-22.64-8.5-32.3V135C352 122.3 362.8 112 376 112s24 10.33 24 23.02V335.8z">
                   </path>
-                </svg><!-- <i class="fa-regular fa-hand-horns"></i> --></span><span>Let's do this</span></a>
+                </svg><!-- <i class="fa-regular fa-hand-horns"></i> --></span><span>Lets do this</span></a>
           </div>
         </div>
       </div>
@@ -5438,34 +5356,19 @@
   </section>
   <footer class="section is-primary is-small has-text-centered">
     <div class="container is-narrow">
-      <a class="logo has-text-white" href="#"><svg class="svg-inline--fa fa-mf-logo fa-4x"
-          aria-hidden="true" focusable="false" data-prefix="fak" data-icon="mf-logo" role="img"
-          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="" style="width: 1.25em">
-          <path fill="currentColor"
-            d="M458.566 321.7c-19.552 0-37.558-10.598-46.947-27.745l-28.553-52.116-24.007 44.217c-12.003 23.505-45.69 26.588-57.886 3.179l-25.168-48.263-37.945 69.938-45.495.289 54.4-102.691c11.52-21.771 42.592-22.157 54.789-.77l27.104 47.78 26.33-47.684c11.807-21.386 42.783-21.483 54.591-.097l36.883 66.277c6.679 12.042 24.973 7.322 24.973-6.358l.096-88.144c0-32.753-26.813-59.437-59.725-59.437h-183.82c-32.911 0-59.724 26.684-59.724 59.437v152.782c0 32.756 26.813 59.44 59.725 59.44h246.642V432H228.187C172.915 432 128 387.302 128 332.294v-152.59C128 124.602 172.818 80 228.187 80h183.627C467.181 80 512 124.602 512 179.704v88.82c0 29.38-23.91 53.175-53.434 53.175z">
-          </path>
-        </svg><!-- <i class="fak fa-mf-logo fa-4x"></i> --></a>
-      <div class="columns is-centered">
-        <div class="column is-one-third">
-          <h1 class="title is-size-4-touch has-text-weight-normal">
-            Living, learning, &amp; leveling up one day at a time.
-          </h1>
-        </div>
-      </div>
       <div class="social-icons">
         <p class="field">
-          <a class="button is-medium" href="#" target="_blank"><span
-              class="icon is-small"><svg class="svg-inline--fa fa-twitter fa-fw" aria-hidden="true" focusable="false"
-                data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512" data-fa-i2svg="">
+          <a class="button is-medium"><span class="icon is-small">
+              <svg class="svg-inline--fa fa-twitter fa-fw" aria-hidden="true" focusable="false" data-prefix="fab"
+                data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                data-fa-i2svg="">
                 <path fill="currentColor"
                   d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                 </path>
-              </svg><!-- <i class="fab fa-twitter fa-fw"></i> --></span></a><a class="button is-medium"
-            href="#" target="_blank"><span class="icon is-small"><svg
-                class="svg-inline--fa fa-dribbble fa-fw" aria-hidden="true" focusable="false" data-prefix="fab"
-                data-icon="dribbble" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                data-fa-i2svg="">
+              </svg><!-- <i class="fab fa-twitter fa-fw"></i> --></span></a><a class="button is-medium"><span
+              class="icon is-small"><svg class="svg-inline--fa fa-dribbble fa-fw" aria-hidden="true" focusable="false"
+                data-prefix="fab" data-icon="dribbble" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512" data-fa-i2svg="">
                 <path fill="currentColor"
                   d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z">
                 </path>
@@ -5477,18 +5380,16 @@
                 <path fill="currentColor"
                   d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
                 </path>
-              </svg><!-- <i class="fab fa-linkedin-in fa-fw"></i> --></span></a><a class="button is-medium"
-            href="#" target="_blank"><span class="icon is-small"><svg
-                class="svg-inline--fa fa-indie-hackers fa-fw" aria-hidden="true" focusable="false" data-prefix="fak"
-                data-icon="indie-hackers" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
-                data-fa-i2svg="">
+              </svg><!-- <i class="fab fa-linkedin-in fa-fw"></i> --></span></a><a class="button is-medium"><span
+              class="icon is-small"><svg class="svg-inline--fa fa-indie-hackers fa-fw" aria-hidden="true"
+                focusable="false" data-prefix="fak" data-icon="indie-hackers" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
                 <path fill="currentColor"
                   d="M180 80H96V416H180V80zM348 80H264V416H348V290H460V416H544V80H460V206H348V80z"></path>
-              </svg><!-- <i class="fak fa-indie-hackers fa-fw"></i> --></span></a><a class="button is-medium"
-            href="#" target="_blank"><span class="icon is-small"><svg
-                class="svg-inline--fa fa-product-hunt fa-fw" aria-hidden="true" focusable="false" data-prefix="fab"
-                data-icon="product-hunt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                data-fa-i2svg="">
+              </svg><!-- <i class="fak fa-indie-hackers fa-fw"></i> --></span></a><a class="button is-medium"><span
+              class="icon is-small"><svg class="svg-inline--fa fa-product-hunt fa-fw" aria-hidden="true"
+                focusable="false" data-prefix="fab" data-icon="product-hunt" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                 <path fill="currentColor"
                   d="M326.3 218.8c0 20.5-16.7 37.2-37.2 37.2h-70.3v-74.4h70.3c20.5 0 37.2 16.7 37.2 37.2zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-128.1-37.2c0-47.9-38.9-86.8-86.8-86.8H169.2v248h49.6v-74.4h70.3c47.9 0 86.8-38.9 86.8-86.8z">
                 </path>
@@ -5509,7 +5410,7 @@
             <path fill="currentColor"
               d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM255.1 176C255.1 176 255.1 176 255.1 176c21.06 0 40.92 8.312 55.83 23.38c9.375 9.344 24.53 9.5 33.97 .1562c9.406-9.344 9.469-24.53 .1562-33.97c-24-24.22-55.95-37.56-89.95-37.56c0 0 .0313 0 0 0c-33.97 0-65.95 13.34-89.95 37.56c-49.44 49.88-49.44 131 0 180.9c24 24.22 55.98 37.56 89.95 37.56c.0313 0 0 0 0 0c34 0 65.95-13.34 89.95-37.56c9.312-9.438 9.25-24.62-.1562-33.97c-9.438-9.312-24.59-9.219-33.97 .1562c-14.91 15.06-34.77 23.38-55.83 23.38c0 0 .0313 0 0 0c-21.09 0-40.95-8.312-55.89-23.38c-30.94-31.22-30.94-82.03 0-113.3C214.2 184.3 234 176 255.1 176z">
             </path>
-          </svg><!-- <i class="far fa-copyright"></i> --></span>twentytwentytwo
+          </svg><!-- <i class="far fa-copyright"></i> --></span>2023
       </div>
       <div class="made-by-bulma">
         <a href="https://bulma.io/"><img src="./files/made-with-bulma--white.png" alt="Made with Bulma" width="163"
@@ -5523,6 +5424,7 @@
   <div id="hl-aria-live-container" aria-live="polite" class="visually-hidden"></div>
   <div id="hl-aria-live-alert-container" role="alert" aria-live="assertive" class="visually-hidden"></div>
   <div id="hl-aria-live-container" aria-live="polite" class="visually-hidden"></div>
+  <script src="./files/script.js"></script>
 </body>
 
 </html>
